@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     'debug_toolbar',
     'rest_framework',
+    'corsheaders',
     'LittleLemonAPI',
 ]
 
@@ -51,6 +52,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
         'debug_toolbar.middleware.DebugToolbarMiddleware',
+        'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = "LittleLemon.urls"
@@ -123,3 +125,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 INTERNAL_IPS = [
     '127.0.0.1'
 ]
+ALLOWED_HOSTS=['*']
+CORS_ORIGIN_ALLOW_ALL = True
