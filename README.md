@@ -1,6 +1,6 @@
 # Restaurant_LittleLemon_API
 
-## To run this API on your local for instance:
+## To run this API on your local machine:
 ### activate pipenv using the following command line:
       pipenv shell
 ### use the following command :
